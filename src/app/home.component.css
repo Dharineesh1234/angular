@@ -1,0 +1,93 @@
+.bg-custom{
+    background-color: black;
+     
+}
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link{
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+.btn-custom{
+    background-color: #E50914 !important;
+    font-weight: 800 !important;
+    color:black !important;
+     
+}
+
+.btn-collection{
+     
+    max-width: 241px;
+    margin:  2em auto;
+}
+
+.img-card{
+    margin: 5px 0px;
+    transition: .1s;
+}
+.img-card:hover{
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+
+.btn-collection-playing{
+     
+    max-width: 110px;
+    margin:  2em auto;
+}
+
+h1 {
+    background-color: black;
+    /* Background gradient */
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+    /* Text shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  
+    /* Font properties */
+    font-family: 'Arial', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 50px 0;
+  
+    /* Animation */
+    animation: textGlow 2s infinite;
+  }
+  
+  /* Keyframes for glowing text effect */
+  @keyframes textGlow {
+    0% {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0 0 10px #ff6b6b, 0 0 20px #ff6b6b, 0 0 30px #ff6b6b, 0 0 40px #ff6b6b;
+    }
+    50% {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0 0 20px #f06595, 0 0 30px #f06595, 0 0 40px #f06595, 0 0 50px #f06595;
+    }
+    100% {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 0 0 10px #ff6b6b, 0 0 20px #ff6b6b, 0 0 30px #ff6b6b, 0 0 40px #ff6b6b;
+    }
+  }
+  .container .btn-custom {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+  }
+  
+  .container .btn-custom:hover {
+    background-color: #f06595;
+  }
+  
+  .btn-collection {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
