@@ -15,6 +15,6 @@ export class HomeComponent {
     
   }
   get bulbImage() {
-    return this.bulbOn ? '/assets/Images/bulbon.jpg' : '/assets/Images/bulboff.jpg';
+    return this.bulbOn ? '/assets/Images/one.PNG' : '/assets/Images/two.PNG';
   }
 }
