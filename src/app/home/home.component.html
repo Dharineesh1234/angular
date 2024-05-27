@@ -16,13 +16,13 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-custom">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img [src]="imageUrl" style="width:80px"/>
+        <img src="{{ imageUrl }}" style="width:80px"/>
       </a>
 
       <div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+            <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
           </li>
         </ul>
       </div>
@@ -30,7 +30,7 @@
   </nav>
 
   <div class="container-fluid">
-    <img [src]="imageUrl1" class="mx-auto d-block" style="max-width: 100%; height: 100%;"/>
+    <img src="{{ imageUrl1 }}" class="mx-auto d-block" style="max-width: 100%; height: 100%;"/>
   </div>
 
   <div class="btn-collection">
@@ -47,9 +47,9 @@
   </div>
   <!-- Bulb Image and Toggle Button -->
   <div class="container text-center mt-4">
-    <img [src]="bulbImage" style="width:100px" alt="Bulb">
+    <img src="{{ bulbImage }}" style="width:100px" alt="Bulb">
     <div class="mt-2">
-      <button class="btn btn-primary me-2" (click)="toggleBulb()">Toggle Bulb</button>
+      <button class="btn btn-primary me-2" (click)="toggleBulb()"></button>
     </div>
   </div>
 
