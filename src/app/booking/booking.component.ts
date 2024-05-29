@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./booking.component.css']
 })
 export class BookingComponent {
+  price: number = 10;
 
 }
