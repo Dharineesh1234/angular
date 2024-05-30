@@ -6,18 +6,24 @@ import { HightlightsDirective } from './highlights.directive';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { MovieReviewsModule } from './reviews/movie-reviews.module';
+import { MovieReviewsComponent } from './reviews/movie-reviews.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HightlightsDirective,
     LoginComponent,
+    MovieReviewsComponent
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule // Import ReactiveFormsModule
+    ReactiveFormsModule,
+  
+    MovieReviewsModule // Import ReactiveFormsModule
     
    
   ],
