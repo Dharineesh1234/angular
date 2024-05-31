@@ -1,21 +1,38 @@
 .container {
-    margin: 20px;
-  }
-  
-  .review-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-  }
-  
-  .review-item h3 {
-    margin-top: 0;
-  }
-  
-  .pagination {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.review-item {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 calc(33.333% - 40px); /* Three cards per row with spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review-item h3 {
+  margin-top: 0;
+}
+
+.review-item p {
+  flex-grow: 1;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
