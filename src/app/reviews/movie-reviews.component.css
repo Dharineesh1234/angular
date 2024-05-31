@@ -1,0 +1,21 @@
+.container {
+    margin: 20px;
+  }
+  
+  .review-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .review-item h3 {
+    margin-top: 0;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  

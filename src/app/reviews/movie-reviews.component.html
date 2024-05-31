@@ -1,1 +1,18 @@
-<p>movie-reviews works!</p>
+<div class="container">
+  <h2>Movie Reviews</h2>
+  <div *ngIf="reviews.length > 0; else noData">
+    <div *ngFor="let review of reviews" class="review-item">
+      <h3>Reviewer: {{ review.reviewerName }}</h3>
+      <p>{{ review.reviewText }}</p>
+      <p>Rating: {{ review.rating }}</p>
+    </div>
+  </div>
+  <ng-template #noData>
+    <p>No reviews available.</p>
+  </ng-template>
+
+  <div class="pagination">
+    <button (click)="previousPage()" [disabled]="pageNumber === 1">Previous</button>
+    <button (click)="nextPage()">Next</button>
+  </div>
+</div>

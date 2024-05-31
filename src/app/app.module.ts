@@ -8,6 +8,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { MovieReviewsModule } from './reviews/movie-reviews.module';
 import { MovieReviewsComponent } from './reviews/movie-reviews.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserService } from './user.service';
 
 
 @NgModule({
@@ -23,11 +25,11 @@ import { MovieReviewsComponent } from './reviews/movie-reviews.component';
     AppRoutingModule,
     ReactiveFormsModule,
   
-    MovieReviewsModule // Import ReactiveFormsModule
-    
+    MovieReviewsModule, // Import ReactiveFormsModule
+    HttpClientModule // Add HttpClientModule to imports array
    
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
