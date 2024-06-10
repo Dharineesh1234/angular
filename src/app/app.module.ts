@@ -4,12 +4,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HightlightsDirective } from './highlights.directive';
 import { LoginComponent } from './login/login.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { MovieReviewsModule } from './reviews/movie-reviews.module';
-import { MovieReviewsComponent } from './reviews/movie-reviews.component';
+
 import { HttpClientModule } from '@angular/common/http';
 import { UserService } from './user.service';
+
+
+
 
 
 @NgModule({
@@ -17,7 +20,9 @@ import { UserService } from './user.service';
     AppComponent,
     HightlightsDirective,
     LoginComponent,
-    MovieReviewsComponent
+    
+
+    
    
   ],
   imports: [
@@ -26,8 +31,8 @@ import { UserService } from './user.service';
     ReactiveFormsModule,
   
     MovieReviewsModule, // Import ReactiveFormsModule
-    HttpClientModule // Add HttpClientModule to imports array
-   
+    HttpClientModule, // Add HttpClientModule to imports array
+    FormsModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

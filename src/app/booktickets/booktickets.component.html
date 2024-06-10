@@ -1,0 +1,33 @@
+<body>
+    <div class="wrapper">
+      <div class="form-wrapper sigin">
+        <form (ngSubmit)="onSubmit(BookForm)" #BookForm="ngForm">
+          <h2>book tickets</h2>
+          <div class="input-group">
+            <input type="number" required name="BookingId" [(ngModel)]="ticketBookInterface.BookingId">
+            <label>Booking  Id</label>
+          </div>
+          <div class="input-group">
+            <input type="text" required name="userId" [(ngModel)]="ticketBookInterface.UserId">
+            <label>user Id</label>
+          </div>
+          <div class="input-group">
+            <input  required name="NumberOfticket" [(ngModel)]="ticketBookInterface.NumberOfStickers">
+            <label> number of tickets</label>
+          </div>
+      
+        
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+     <!-- Success Modal -->
+  <div *ngIf="showSuccessModal" class="modal">
+    <div class="modal-content">
+      <span class="close" (click)="closeSuccessModal()">&times;</span>
+      <h2>Congratulations!</h2>
+      <p>Ticket booked successfully.</p>
+    </div>
+  </div>
+    </body>
+  

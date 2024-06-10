@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="booking.component.css">
 </head>
 <body>
-  
-
   <div>
     <img class="main-logo" src="/assets/Images/netflix.png"/>
   </div>
@@ -102,12 +100,12 @@
   <p class="text" style="font-size: 1em;margin:0px 0px 15px 0px">
     You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
   </p>
-  <a routerLink="/home">
+  <a routerLink="/booktickets">
     <button class="btn-home">
-      Home
+      Book
     </button>
   </a>
-
+  
   <script>
     var count = 0;
     var seats = document.getElementsByClassName("seat");

@@ -1,0 +1,37 @@
+<body>
+<div class="wrapper">
+  <div class="form-wrapper sigin">
+    <form (ngSubmit)="onSubmit(reviewForm)" #reviewForm="ngForm">
+      <h2>Add comments</h2>
+      <div class="input-group">
+        <input type="number" required name="reviewerId" [(ngModel)]="ReviewAddingInterface.ReviewId">
+        <label>Reviewer Id</label>
+      </div>
+      <div class="input-group">
+        <input type="number" required name="movieId" [(ngModel)]="ReviewAddingInterface.MovieId">
+        <label>Movie Id</label>
+      </div>
+      <div class="input-group">
+        <input type="text" required name="ReviewerName" [(ngModel)]="ReviewAddingInterface.ReviewerName">
+        <label> Reviewer Name</label>
+      </div>
+      <div class="input-group">
+        <input type="text" required name="ReviewText" [(ngModel)]="ReviewAddingInterface.ReviewText">
+        <label>Review Text</label>
+      </div>
+      <div class="input-group">
+        <input type="number" required name="rating" [(ngModel)]="ReviewAddingInterface.Rating">
+        <label>Rating</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<div *ngIf="showSuccessModal" class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="closeSuccessModal()">&times;</span>
+    <h2>Success!</h2>
+    <p>Review added successfully.</p>
+  </div>
+</div>
+</body>
